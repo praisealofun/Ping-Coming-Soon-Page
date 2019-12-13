@@ -1,0 +1,144 @@
+:root {
+--mobile-width: 375px;
+--desktop-width: 1440px;
+--main--blue: hsl(223, 87%, 63%);
+--pale-blue: hsl(223, 100%, 88%);
+--light-red: hsl(354, 100%, 66%);
+--main-gray: hsl(0, 0%, 59%);
+--very-dark-blue: hsl(209, 33%, 12%);
+--main-font-size: 20px;
+
+}
+
+.attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: var(--main--blue);
+      }
+
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          max-width: var(--mobile-width);
+          height: 100vh;
+          margin: 0px auto;
+          text-align: center;
+          font-family: 'Libre Franklin', sans-serif;
+          font-size: var(--main-font-size);
+      }
+
+      .total_section {
+          max-width: var(--mobile-width);
+          height: 100vh;
+      }
+      
+      .logo {
+          text-transform: uppercase;
+          margin-top: 70px;
+          font-weight: 700;
+          font-size: 25px;
+        }
+
+      .logo_fullstop {
+            color: var(--main--blue);
+        }
+
+      .head {
+          color:  var(--main-gray);
+          font-weight: 200;
+      }
+
+      .soon {
+          color: black;
+      }
+
+      .p {
+          font-size: 15px;
+      }
+
+
+      .input_section {
+          display: flex;
+          flex-direction: column;
+          margin: 10px 40px;
+      }
+
+      .email {
+          height: 35px;
+          border-radius: 20px;
+          padding: 0px 20px;
+          border: 1px solid var(--pale-blue);
+          margin: 10px;
+      }
+
+      .email::placeholder {
+          color: var(--pale-blue);
+      }
+
+      .button {
+          background-color: var(--main--blue);
+          color: white;
+          height: 35px;
+          border-radius: 20px;
+          padding: 0px 20px;
+          border: 1px solid var(--pale-blue);
+          margin: 0px 10px;
+      }
+
+      .image {
+          width: 80%;
+          height: 200px;
+          margin: 50px 10px;
+      }
+
+@media screen and (min-width: 1024px) {
+    body {
+         max-width: var(--desktop-width);
+          height: 100vh;
+          margin: 0px auto;
+          text-align: center;
+          font-family: 'Libre Franklin', sans-serif;
+          font-size: var(--main-font-size);
+         
+    }
+
+    .total_section {
+        max-width: var(--desktop-width);
+        height: 100vh;
+    }
+
+    .input_section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email {
+        
+    }
+
+    .head {
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+
+    .p {
+        margin-bottom: 0px;
+    }
+
+     .image {
+          width: 30%
+      }
+
+
+
+}
+         
+
+
